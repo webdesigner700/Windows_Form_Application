@@ -63,7 +63,10 @@ namespace Assignment2
 
 			// This method is used to store the inforation of a new user into the login text file 
 
-			string loginPath = @"C:\Users\vinay\OneDrive\Documents\Visual Studio 2019\UTS Code Files\Assignment2\Assignment2\login.txt";
+			// When running this project, line 68, 102 and 117 should refelct the path of your login.txt file. 
+
+			string loginPath = @"C:\Users\vinay\OneDrive\Documents\UTS Subjects\Application Development with .NET\Assignment2\login.txt"; 
+
 
 			int loopchecker = 1;
 
@@ -96,7 +99,7 @@ namespace Assignment2
         {
 			// This method is used to load data from the login text file into the loginDetails arraylist 
 
-			string[] userDetails = System.IO.File.ReadAllLines(@"C:\Users\vinay\OneDrive\Documents\Visual Studio 2019\UTS Code Files\Assignment2\Assignment2\login.txt");
+			string[] userDetails = System.IO.File.ReadAllLines(@"C:\Users\vinay\OneDrive\Documents\UTS Subjects\Application Development with .NET\Assignment2\login.txt");
 			// The userDetails array stores the information lien by line from the login text file 
 			
 			ArrayList loginDetails = new ArrayList();
@@ -111,7 +114,7 @@ namespace Assignment2
 
 		public static ArrayList loaduserNames()
         {
-			string[] userDetails = System.IO.File.ReadAllLines(@"C:\Users\vinay\OneDrive\Documents\Visual Studio 2019\UTS Code Files\Assignment2\Assignment2\login.txt");
+			string[] userDetails = System.IO.File.ReadAllLines(@"C:\Users\vinay\OneDrive\Documents\UTS Subjects\Application Development with .NET\Assignment2\login.txt");
 
 			string[] singleUser;
 
